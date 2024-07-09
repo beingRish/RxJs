@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { DestMainComponent } from './dest-main/dest-main.component';
 import { DestAddComponent } from './dest-add/dest-add.component';
 import { DestListComponent } from './dest-list/dest-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DestMainComponent,
     DestAddComponent,
-    DestListComponent
+    DestListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

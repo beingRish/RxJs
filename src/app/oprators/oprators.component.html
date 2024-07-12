@@ -1,1 +1,63 @@
-<h6>{{title}}</h6>
+<h1>{{title}}</h1>
+<ol>
+    <strong>Operators are functions. it has two types</strong>
+    <li>Pipe able Operator</li>
+    <li>Creation Operator</li>
+</ol>
+
+<div class="explaination">
+    <div>
+        <p><strong>Pipe able Operator</strong> is a function that takes an Observable as its inpu and returns another Observable. It is a pure operation: the previous Observable stays unmodified.</p>
+    </div>
+    <div>
+        <Strong>Creation Operators</Strong> are the other kind of operator, which can be  called as standalone  functions to create  a new Observable.
+    </div>
+</div>
+
+<h2>Common Operators:</h2>
+<ol>
+    <li>
+        <strong>of, from => </strong> used to convert array into observable
+    </li>
+    <li>
+        <strong>range => </strong> Creates an Observable that emits a sequence of numbers within a specified range.
+    </li>
+    <li>
+        <strong>distinct => </strong> Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
+    </li>
+    <li>
+        <strong>first => </strong> Emits only the first value(or the first value that meets some condition) emitted by the source Observable.
+    </li>
+    <li>
+        <strong>last => </strong> Returns an Observable that emits only the last item emitted by the source Observable.
+    </li>
+    <li>
+        <strong>filter => </strong> Filter items emitted by the source Observable by only emitting those that satisfy a specified predicate.
+    </li>
+    <li>
+        <strong>skip => </strong> Returns an Observable that skips the first count items emitted by the source Observable.
+    </li>
+    <li>
+        <strong>take => </strong> Emits only the first count values emitted by the source Observable.
+    </li>
+    <li>
+        <strong>toArray => </strong>Collects all source emissions and emits them as an array when the source completes.
+    </li>
+    <li>
+        <strong>map => </strong>The function to apply to each value emitted by the source Observable.(just like for loop)
+    </li>
+    <li>
+        <strong>tap => </strong>Used to perform side-effects for every emission on the source observable
+    </li>
+    <li>
+        <strong>concat => </strong>concat joins multiple Observables together, by subscribing to them one at a time and merging their results into the output Observable.
+    </li>
+    <li>
+        <strong>merge => </strong>Creates an output Observable which concurrently emits all values from every given input Observable.
+    </li>
+    <li>
+        <strong>zip => </strong>It brings together two or more sequence of corresponding values as a tuple.
+    </li>
+
+
+</ol>

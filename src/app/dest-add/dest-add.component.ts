@@ -14,7 +14,7 @@ export class DestAddComponent implements OnInit{
   empdata: any;
 
   ngOnInit(): void {
-    this.service.GetbyCode('tester').toPromise().then(result => {
+    this.service.GetbyCode('manager').toPromise().then(result => {
      
       this.empdata = result;
       this.designationform = new FormGroup({
@@ -31,9 +31,11 @@ export class DestAddComponent implements OnInit{
 
   SaveDes() {
     if(this.designationform.valid){
+      
       this.service.Save(this.designationform.value)
+      
         .subscribe(result => {
-
+            
         })
     }
   }

@@ -7,7 +7,7 @@ import { Designation } from '../Model/designation';
   providedIn: 'root'
 })
 export class DestService {
-  apiUrl = 'https://jsonplaceholder.typicode.com/';
+  baseUrl = '../../assets/data/designation.json';
 
   constructor(private http: HttpClient) { }
 
@@ -18,17 +18,17 @@ export class DestService {
   }
 
   GetAll() : Observable<Object>{
-    return this.http.get(this.apiUrl);
+    return this.http.get(this.baseUrl);
   }
 
   GetbyCode(code: string): Observable<Object> {
-    return this.http.get<any[]>(this.apiUrl).pipe(
+    return this.http.get<any[]>(this.baseUrl).pipe(
       map((designations: any[]) => designations.find(designation => designation.code === code))
     );
   }
 
   Save(inputData: any): Observable<any>{
-    return this.http.get<any>(this.apiUrl, inputData).pipe(
+    return this.http.get<any>(this.baseUrl, inputData).pipe(
       tap(() => {
         this.Refreshrequired.next();
       })

@@ -13,10 +13,15 @@ export class DestListComponent implements OnInit{
 
   ngOnInit(): void {
       this.Getall();
+      this.service.Refreshrequired.subscribe(response => {
+        this.Getall();
+      })
   }
 
   Getall(){
     this.service.GetAll().subscribe(result => {
+      console.log('result', result);
+      
       this.destlist$ = result;
     })
   }

@@ -1,0 +1,14 @@
+[
+  {
+    "code": "developer",
+    "name": "Developer"
+  },
+  {
+    "code": "manager",
+    "name": "Manager"
+  },
+  {
+    "code": "tester",
+    "name": "Tester"
+  }
+]

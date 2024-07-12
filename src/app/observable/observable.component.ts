@@ -8,6 +8,8 @@ import { of, Observable } from 'rxjs';
 })
 export class ObservableComponent {
 
+  title = 'RxJS Observable'
+
   users: any;
   userObservable$: any;
   currentStatus: any;

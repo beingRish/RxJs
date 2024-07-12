@@ -8,7 +8,7 @@ import { MasterService } from '../service/master.service';
 })
 export class SubjectComponent {
 
-
+  title = 'RxJS Subject'
 
   status: any;
   constructor(private service: MasterService) {

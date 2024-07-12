@@ -9,6 +9,9 @@ import { DestListComponent } from './dest-list/dest-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { SubjectComponent } from './subject/subject.component';
+import { ObservableComponent } from './observable/observable.component';
+import { OpratorsComponent } from './oprators/oprators.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './home/home.component';
     DestMainComponent,
     DestAddComponent,
     DestListComponent,
-    HomeComponent
+    HomeComponent,
+    SubjectComponent,
+    ObservableComponent,
+    OpratorsComponent
   ],
   imports: [
     BrowserModule,
